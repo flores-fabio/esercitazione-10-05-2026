@@ -1,1 +1,11 @@
-<p>lista-tipi works!</p>
+<h1>TIPI DI POKEMON</h1>
+<div>
+    <ul>
+        @for (t of tipi; track t.name){ <!-- cicli ogni singolo elemento del array tipi e lo iscriviamo-->
+            <li>
+                <a [routerLink]="['/lista', t.name]"> {{t.name}}</a>
+                
+            </li>
+        }
+    </ul>
+</div>
