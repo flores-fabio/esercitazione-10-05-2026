@@ -1,1 +1,14 @@
-<p>dettagli-pokemon works!</p>
+<h2>{{pokemon.name}}</h2>
+<img [src] ="pokemon.sprites.front_default" [alt]="pokemon.name">
+
+<div class = "info">
+    <p><strong>ALTEZZA:</strong>
+    {{pokemon.height}}</p>
+
+    <p><strong>PESO:</strong>
+    {{pokemon.weight}}</p>
+</div>
+
+<button routerLink="/tipi">Torna alla home</button>
+
+
